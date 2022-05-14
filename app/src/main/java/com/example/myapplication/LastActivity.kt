@@ -19,11 +19,17 @@ class LastActivity : AppCompatActivity() {
             startActivity(intent)
         })
 
-        val btn_exit = findViewById<Button>(R.id.btn_exit)
-        btn_exit.setOnClickListener({
-            finishAffinity()
-            System.runFinalization()
-            System.exit(0)
+//        val btn_exit = findViewById<Button>(R.id.btn_exit)
+//        btn_exit.setOnClickListener({
+//            finishAffinity()
+//            System.runFinalization()
+//            System.exit(0)
+//        })
+
+        val btn_next = findViewById<Button>(R.id.btn_to_history_page)
+        btn_next.setOnClickListener({
+            val intent = Intent(this, SetupActivity::class.java)
+            startActivity(intent)
         })
 
         cloth_location1.setOnClickListener {
