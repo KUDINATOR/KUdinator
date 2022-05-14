@@ -21,7 +21,5 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".SubActivity"/>
         <activity android:name=".LastActivity"/>
-        <activity android:name=".SetupActivity"/>
-        <activity android:name=".HistoryActivity"/>
     </application>
 </manifest>

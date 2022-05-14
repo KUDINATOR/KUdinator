@@ -19,12 +19,12 @@ class LastActivity : AppCompatActivity() {
             startActivity(intent)
         })
 
-//        val btn_exit = findViewById<Button>(R.id.btn_exit)
-//        btn_exit.setOnClickListener({
-//            finishAffinity()
-//            System.runFinalization()
-//            System.exit(0)
-//        })
+        val btn_exit = findViewById<Button>(R.id.btn_exit)
+        btn_exit.setOnClickListener({
+            finishAffinity()
+            System.runFinalization()
+            System.exit(0)
+        })
 
         cloth_location1.setOnClickListener {
             Toast.makeText(this@LastActivity, "상의 : 3단 서랍 두번째 칸\n 하의 : 3단 서랍 첫번째 칸", Toast.LENGTH_LONG).show()
